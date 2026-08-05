@@ -141,16 +141,16 @@ for p in patterns:
 
 OUTPUT:
 
-Text    : AABAACAADAABAABA
-Pattern : AABA
+Text    : aaabbaba
+Pattern : bba
 
-Naive -> Matches at: [0, 9, 12], Comparisons: 30
-KMP   -> Matches at: [0, 9, 12], Comparisons: 18
-RK    -> Matches at: [0, 9, 12], Comparisons: 12
+Naive -> Matches at: [3], Comparisons: 9
+KMP   -> Matches at: [3], Comparisons: 8
+RK    -> Matches at: [3], Comparisons: 3
 
      Pattern      Naive        KMP         RK
 --------------------------------------------------
-          AB      12535      10000       1270
-        ABCD      13347      10000        263
-      ABCDAB      13405      10008        121
-    ABCDABCD      13409      10011        122
+          AB      12458      10000       1224
+        ABCD      13231      10000        258
+      ABCDAB      13283      10010        130
+    ABCDABCD      13281      10010        137
