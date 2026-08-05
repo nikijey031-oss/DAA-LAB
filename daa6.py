@@ -71,3 +71,21 @@ print(f'\nMinimum scalar multiplications: {m[1][n]}')
 print(f'Optimal parenthesization: {print_optimal_parens(s, 1, n)}')
 
 print_dp_table(m, n)
+
+OUTPUT:
+
+Matrix Dimensions:
+ A1: 20 x 15
+ A2: 15 x 30
+ A3: 30 x 10
+ A4: 10 x 25
+
+Minimum scalar multiplications: 12500
+Optimal parenthesization: ((A1 x (A2 x A3)) x A4)
+
+DP Cost Table m[i][j]:
+      A       1A       2A       3A       4
+A1            0     9000     7500    12500
+A2          ---        0     4500     8250
+A3          ---      ---        0     7500
+A4          ---      ---      ---        0
