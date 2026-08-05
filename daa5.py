@@ -48,7 +48,7 @@ def min_max_naive(arr):
 
 
 # --- Demonstration on small array ---
-arr = [3, 1, 7, 4, 9, 2, 8, 5, 6, 0]
+arr = [8, 2, 5, 1, 9, 4, 7, 0, 6, 3]
 
 comparison_count = 0
 mn, mx = min_max_dc(arr, 0, len(arr) - 1)
@@ -77,7 +77,7 @@ for size in [10, 100, 1000, 10000]:
 
 OUTPUT:
 
-Array: [3, 1, 7, 4, 9, 2, 8, 5, 6, 0]
+Array: [8, 2, 5, 1, 9, 4, 7, 0, 6, 3]
 Min: 0, Max: 9
 D&C Comparisons: 14
 Naive Comparisons: 18
