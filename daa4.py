@@ -69,6 +69,8 @@ for v in range(len(graph)):
 OUTPUT:
 
 Shortest paths from vertex 0:
+  Vertex   Distance                           Path
+-------------------------------------------------------
        0          0                              0
        1          3                         0 -> 1
        2          5                    0 -> 1 -> 2
