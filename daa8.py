@@ -76,3 +76,23 @@ print(f'\nPath verification:')
 for i in range(n):
     u, v = best_path[i], best_path[i + 1]
     print(f' {cities[u]} -> {cities[v]}: cost = {cost[u][v]}')
+
+OUTPUT:
+
+5-City TSP - Cost Matrix:
+         A     B     C     D     E
+   A   INF    12     7    15     9
+   B    12   INF     6    10     8
+   C     7     6   INF    11    13
+   D    15    10    11   INF     5
+   E     9     8    13     5   INF
+
+Optimal Tour: A -> C -> B -> D -> E -> A
+Minimum Cost: 37
+
+Path verification:
+ A -> C: cost = 7
+ C -> B: cost = 6
+ B -> D: cost = 10
+ D -> E: cost = 5
+ E -> A: cost = 9
